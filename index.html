@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surajit Das Portfolio</title>
+
+    <meta name="description" content="Surajit Das - MERN Stack Developer and DSA enthusiast Portfolio" />
+    <meta name="keywords" content="Surajit, Web Developer, MERN, Portfolio, DSA, Frontend" />
+    <meta name="author" content="Surajit Das" />
+
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <title>Surajit Das - Full Stack Developer</title>
+    <meta name="description"
+        content="Surajit Das Portfolio | MERN Stack Developer | Blockchain Intern | Codeforces & LeetCode Coder">
+    <meta name="keywords"
+        content="Surajit Das, MERN, Full Stack, Portfolio, NIT Trichy, Blockchain, Developer, DSA, Codeforces, LeetCode">
+    <meta name="author" content="Surajit Das">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Surajit Das - Full Stack Developer">
+    <meta property="og:description"
+        content="Explore my portfolio of web projects, coding achievements, and blockchain research work.">
+    <meta property="og:image" content="https://your-website.com/preview.png">
+    <meta property="og:url" content="https://your-website.com">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Surajit Das - Developer Portfolio">
+    <meta name="twitter:description"
+        content="Portfolio of Surajit Das, a passionate full-stack developer and blockchain intern.">
+    <meta name="twitter:image" content="https://your-website.com/preview.png">
+
+
+    <style>
+        :root {
+            --primary-bg: #0a0a0a;
+            /* Slightly softer black */
+            --primary-text: #e0e0e0;
+            /* Softer white */
+            --accent: rgb(170, 107, 228);
+            --button-bg: rgb(29, 110, 110);
+            --hover-accent: #ffe066;
+            /* Goldish yellow */
+            --glass-bg-dark: rgba(255, 255, 255, 0.08);
+            /* Transparent white for dark mode glass */
+            --glass-border-dark: rgba(255, 255, 255, 0.15);
+            /* Slightly stronger border */
+            --card-shadow-dark: rgba(0, 0, 0, 0.25);
+            /* Stronger card shadow */
+            --glow-color-dark: #aa6be4;
+        }
+
+        html {
+            scroll-behavior: smooth; /* IMPORTANT: Restored smooth scrolling */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #scrollBar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background: #a0c518;
+            width: 0%;
+            z-index: 9999;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--primary-text);
+            line-height: 1.6;
+            overflow-x: hidden;
+            /* Enhanced background gradient */
+            background: radial-gradient(circle at 10% 20%, rgba(170, 107, 228, 0.12) 0%, transparent 20%),
+                        radial-gradient(circle at 90% 80%, rgba(29, 110, 110, 0.12) 0%, transparent 20%),
+                        linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            /* Animated background noise texture */
+            animation: backgroundNoise 15s infinite alternate;
+        }
+
+        /* Animated noise effect */
+        @keyframes backgroundNoise {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 100% 100%;
+            }
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB2aWR0aD0iNjAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZmlsdGVyIGlkPSJuIj48ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iLjMzMzMgLjMzMzMgLjMzMzMgMCAwIC4zMzMzIC4zMzMzIC4zMzMzIDAgMCAuMzMzMyAuMzMzMyAuMzMzMyAwIDAgMCAwIDAgMSAwIiAvPjxmZVR1cmJ1bGVuY2UgdHlwZT0iZnJhY3RhbE5vaXNlIiBiYXNlRnJlcXVlbmN5PSIwLjciIG51bU9jdGF2ZXM9IjQiIHN0aXRjaFRpbGVzPSJub0NvbW1vbiIgLz48ZmVBbmJpZW50TGlnaHRpbmcgZGlmZnVzZVNwZWN1bGFyPSJub25lIiAvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcnU9InVybCgjbikiIG9wYWNpdHk9IjAuMDQiIC8+PC9zdmc+'); /* Very subtle SVG noise */
+            background-size: cover;
+            pointer-events: none;
+            z-index: -2; /* Below particles */
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 75px;
+            background-color: rgba(29, 110, 110, 0.9); /* Slightly transparent nav */
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            flex-wrap: wrap;
+            animation: fadeInDown 1s ease-in-out;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        /* Special Hover Effect for Nav Links */
+        nav ul li a {
+            position: relative;
+            color: var(--primary-text);
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-block;
+            padding: 5px 0; /* Add padding for better hover area */
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--hover-accent);
+            transition: width 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smoother transition */
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        nav ul li a:hover {
+            color: var(--hover-accent);
+            transform: translateY(-2px); /* Subtle lift on hover */
+        }
+
+        .left {
+            font-size: 1.6rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: var(--hover-accent); /* Make name pop */
+        }
+
+        .toggle-theme {
+            background: none;
+            border: 2px solid var(--primary-text);
+            padding: 5px 10px;
+            color: var(--primary-text);
+            cursor: pointer;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .toggle-theme:hover {
+            background-color: var(--accent);
+            border-color: var(--accent);
+            transform: scale(1.1);
+        }
+
+        section {
+            scroll-margin-top: 80px;
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+            position: relative; /* For scroll-triggered text effects */
+        }
+
+        h2 {
+            text-align: center;
+            color: var(--accent);
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            font-weight: 700; /* Bolder headings */
+            letter-spacing: 1px;
+            text-shadow: 0 0 8px rgba(170, 107, 228, 0.4);
+            /* Animation for headings */
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        h2.aos-animate { /* AOS adds aos-animate class when visible */
+            opacity: 1;
+            transform: translateY(0);
+        }
+        h2:hover {
+            transform: scale(1.02); /* Slight zoom on hover */
+            text-shadow: 0 0 15px rgba(170, 107, 228, 0.6);
+            transition: transform 0.3s ease, text-shadow 0.3s ease;
+        }
+
+
+        .firstsec {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            text-align: center;
+            align-items: center; /* Vertically align content */
+            min-height: calc(100vh - 75px); /* Take full viewport height minus nav */
+            position: relative;
+            overflow: hidden; /* Hide overflow of particles */
+        }
+
+        /* Subtle sparkle/glow effect on hero section background */
+        .firstsec::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 50% 50%, rgba(170, 107, 228, 0.05) 0%, transparent 70%);
+            animation: heroSparkle 20s linear infinite;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        @keyframes heroSparkle {
+            0% { transform: translate(0, 0); }
+            25% { transform: translate(5%, 5%); }
+            50% { transform: translate(0, 10%); }
+            75% { transform: translate(-5%, 5%); }
+            100% { transform: translate(0, 0); }
+        }
+
+
+        .firstsec>div {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+        }
+
+        .leftSection h2 {
+            font-size: 2.2rem; /* Slightly larger for hero */
+            text-align: center;
+            margin-bottom: 10px;
+            text-shadow: none; /* Remove shadow to not clash with Typed.js */
+        }
+        .leftSection h2.aos-animate { /* Apply aos-animate directly for leftSection h2 */
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        #element {
+            display: inline-block;
+            white-space: nowrap;
+            font-size: 1.8rem; /* Larger for impact */
+            font-weight: 600;
+            color: var(--accent);
+            text-shadow: 0 0 5px rgba(170, 107, 228, 0.5);
+        }
+
+        .hero-btn,
+        .resume-btn {
+            margin: 15px 10px 0;
+            padding: 12px 25px; /* Larger buttons */
+            font-size: 1.05rem;
+            background-color: var(--button-bg);
+            border: none;
+            color: white;
+            border-radius: 8px; /* More rounded */
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(29, 110, 110, 0.4);
+            position: relative;
+            overflow: hidden; /* For gradient hover */
+        }
+
+        .hero-btn:hover,
+        .resume-btn:hover {
+            background-color: teal;
+            transform: translateY(-3px) scale(1.02); /* Lift and slight scale */
+            box-shadow: 0 8px 20px rgba(29, 110, 110, 0.6);
+            animation: pulseEffect 1.5s infinite; /* Add pulse */
+        }
+        @keyframes pulseEffect {
+            0% { transform: translateY(-3px) scale(1.02); box-shadow: 0 8px 20px rgba(29, 110, 110, 0.6); }
+            50% { transform: translateY(-5px) scale(1.03); box-shadow: 0 10px 25px rgba(29, 110, 110, 0.8); }
+            100% { transform: translateY(-3px) scale(1.02); box-shadow: 0 8px 20px rgba(29, 110, 110, 0.6); }
+        }
+
+
+        .live-demo-btn {
+            margin: 15px 10px 0;
+            padding: 12px 25px;
+            font-size: 1.05rem;
+            background-color: var(--accent);
+            border: none;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 5px 15px rgba(170, 107, 228, 0.4);
+        }
+
+        .live-demo-btn:hover {
+            background-color: #aa6be4;
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 20px rgba(170, 107, 228, 0.6);
+        }
+
+        .image-container {
+            position: relative;
+            width: 280px; /* Slightly larger image */
+            height: 280px;
+            margin: auto;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(29, 110, 110, 0.6); /* Stronger shadow */
+            animation: zoomIn 1.5s ease-out forwards;
+            border: 3px solid var(--accent); /* Added border */
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            transition: transform 0.5s ease; /* Smooth zoom on hover */
+        }
+        .image-container:hover img {
+            transform: scale(1.1);
+        }
+
+        .caption {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(29, 110, 110, 0.85);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            opacity: 0;
+            transition: 0.3s ease;
+        }
+
+        .image-container:hover .caption {
+            opacity: 1;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .skill-item {
+            background: var(--button-bg);
+            padding: 12px 25px; /* Larger padding */
+            border-radius: 10px; /* More rounded */
+            color: white;
+            box-shadow: 0 0 15px var(--button-bg);
+            transition: 0.3s ease;
+            font-weight: 600;
+            text-transform: capitalize; /* Consistent casing */
+            letter-spacing: 0.5px;
+        }
+
+        .skill-item:hover {
+            background-color: var(--accent);
+            transform: translateY(-5px) scale(1.05); /* Lift and scale */
+            box-shadow: 0 0 25px var(--accent);
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        /* Glassmorphism for Project Cards */
+        .project-card {
+            background: var(--glass-bg-dark);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-radius: 15px;
+            padding: 25px; /* More padding */
+            border: 1px solid var(--glass-border-dark);
+            box-shadow: 0 4px 30px var(--card-shadow-dark);
+            transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            display: flex; /* Flex for content alignment */
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px) scale(1.02); /* Lift and slight scale */
+            box-shadow: 0 10px 40px rgba(170, 107, 228, 0.4); /* Stronger glow on hover */
+            background: rgba(255, 255, 255, 0.12);
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(170, 107, 228, 0.15), transparent); /* Stronger gradient */
+            transition: 0.5s cubic-bezier(0.23, 1, 0.32, 1); /* Smoother transition */
+        }
+
+        .project-card:hover::before {
+            left: 100%;
+        }
+
+        .project-card h3 {
+            color: var(--accent);
+            margin-bottom: 10px;
+            text-align: left; /* Align project title left */
+            text-shadow: none; /* Remove h2 shadow if not needed */
+            font-size: 1.6rem;
+            transition: color 0.3s ease;
+        }
+        .project-card:hover h3 {
+            color: var(--hover-accent); /* Change title color on hover */
+        }
+
+        .project-card p {
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+            flex-grow: 1; /* Allow description to take space */
+        }
+
+        .project-card .links {
+            margin-top: 15px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .project-card .links a {
+            padding: 8px 15px;
+            border-radius: 5px;
+            background-color: var(--button-bg);
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .project-card .links a:hover {
+            background-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+
+        .project-tech-tags {
+            margin-top: 15px;
+            margin-bottom: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tech-tag {
+            background-color: rgba(170, 107, 228, 0.4);
+            color: var(--primary-text);
+            padding: 4px 10px;
+            border-radius: 5px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            border: 1px solid rgba(170, 107, 228, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--button-bg);
+            color: var(--primary-text);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            nav {
+                height: auto;
+                padding: 15px 0;
+            }
+            .left {
+                margin-bottom: 10px;
+            }
+
+            .firstsec {
+                flex-direction: column;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            h2 {
+                font-size: 2rem;
+            }
+            .leftSection h2 {
+                font-size: 1.8rem;
+            }
+            #element {
+                font-size: 1.4rem;
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .typed-cursor {
+            font-size: 1.5rem;
+            animation: blink 0.7s infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
+
+        /* Keyframes */
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1; /* Ensure it's behind content */
+        }
+
+        /* Glassmorphism for Coding Cards */
+        .coding-card {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem; /* Reduced gap */
+            padding: 1.2rem 1.6rem;
+            background: var(--glass-bg-dark);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-radius: 16px;
+            border: 1px solid var(--glass-border-dark);
+            box-shadow: 0 4px 30px var(--card-shadow-dark);
+            transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+            width: 300px;
+            height: 100px;
+            color: var(--primary-text);
+        }
+
+        .coding-card:hover {
+            transform: translateY(-8px) scale(1.05); /* Lift and scale */
+            background: rgba(255, 255, 255, 0.12);
+            box-shadow: 0 10px 40px rgba(157, 150, 168, 0.4); /* Stronger glow on hover */
+        }
+
+        .coding-card h3 {
+            margin: 0;
+            font-size: 1.15rem;
+            color: var(--primary-text);
+            transition: color 0.3s ease;
+        }
+        .coding-card:hover h3 {
+            color: var(--hover-accent);
+        }
+
+        .coding-card p {
+            margin: 2px 0;
+            color: var(--primary-text);
+            font-size: 0.95rem;
+        }
+
+        .logo {
+            width: 48px;
+            height: 48px;
+            border-radius: 8px;
+            object-fit: contain;
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for logo background */
+            padding: 4px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: transparent;
+            z-index: 1000;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #aa6be4, #1d6e6e);
+            width: 0%;
+            transition: width 0.1s ease-out;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #1e1e1e;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #aa6be4;
+            border-radius: 10px;
+            border: 2px solid #1e1e1e;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #c58cff;
+        }
+
+        /* Firefox Support */
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: #aa6be4 #1e1e1e;
+        }
+
+        /* Scroll-to-Top Button */
+        #scrollToTopBtn {
+            display: none; /* Hidden by default */
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 99;
+            font-size: 24px;
+            border: none;
+            outline: none;
+            background-color: var(--accent);
+            color: white;
+            cursor: pointer;
+            padding: 12px 18px;
+            border-radius: 50%;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s, transform 0.3s, opacity 0.3s;
+            opacity: 0.8;
+        }
+
+        #scrollToTopBtn:hover {
+            background-color: #c58cff;
+            transform: translateY(-5px) scale(1.1);
+            opacity: 1;
+        }
+
+        /* Light mode adjustments */
+        body.light-mode {
+            --primary-bg: #f8f8f8; /* Lighter white */
+            --primary-text: #333;
+            --button-bg: #6c757d; /* Muted grey for light mode buttons */
+            --hover-accent: #007bff;
+            --accent: #6a1a7b;
+            /* Darker purple for contrast */
+            --glass-bg-light: rgba(255, 255, 255, 0.65);
+            /* More opaque white for light mode glass */
+            --glass-border-light: rgba(0, 0, 0, 0.1);
+            --card-shadow-light: rgba(0, 0, 0, 0.1);
+            --glow-color-light: #007bff; /* Blue glow for light mode */
+
+            background: radial-gradient(circle at 10% 20%, rgba(106, 26, 123, 0.08) 0%, transparent 20%),
+                        radial-gradient(circle at 90% 80%, rgba(160, 197, 24, 0.08) 0%, transparent 20%),
+                        linear-gradient(135deg, #e0e0e0 0%, #f8f8f8 100%); /* Lighter gradient */
+            animation: backgroundNoiseLight 15s infinite alternate;
+        }
+        body.light-mode::before {
+             background-image: url('data:image/svg+xml;base64,PHN2ZyB2aWR0aD0iNjAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZmlsdGVyIGlkPSJuIj48ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iLjMzMzMgLjMzMzMgLjMzMzMgMCAwIC4zMzMzIC4zMzMzIC4zMzMzIDAgMCAuMzMzMyAuMzMzMyAuMzMzMyAwIDAgMCAwIDAgMSAwIiAvPjxmZVR1cmJ1bGVuY2UgdHlwZT0iZnJhY3RhbE5vaXNlIiBiYXNlRnJlcXVlbmN5PSIwLjciIG51bU9jdGF2ZXM9IjQiIHN0aXRjaFRpbGVzPSJub0NvbW1vbiIgLz48ZmVBbmJpZW50TGlnaHRpbmcgZGlmZnVzZVNwZWN1bGFyPSJub25lIiAvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcnU9InVybCgjbikiIG9wYWNpdHk9IjAuMDYiIC8+PC9zdmc+'); /* Slightly more visible noise for light mode */
+        }
+        @keyframes backgroundNoiseLight {
+            0% {
+                background-position: 100% 100%;
+            }
+            100% {
+                background-position: 0 0;
+            }
+        }
+
+
+        body.light-mode nav {
+            background-color: rgba(160, 197, 24, 0.9);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        body.light-mode nav ul li a {
+            color: #333;
+        }
+        body.light-mode nav ul li a::after {
+            background-color: var(--hover-accent);
+        }
+        body.light-mode nav ul li a:hover {
+            color: var(--hover-accent);
+        }
+        body.light-mode .left {
+            color: #4a0f5a; /* Darker accent for name */
+        }
+
+
+        body.light-mode .toggle-theme {
+            border-color: #333;
+            color: #333;
+        }
+        body.light-mode h2 {
+            color: var(--accent);
+            text-shadow: 0 0 8px rgba(106, 26, 123, 0.2);
+        }
+        body.light-mode h2:hover {
+            text-shadow: 0 0 15px rgba(106, 26, 123, 0.4);
+        }
+        body.light-mode .firstsec::before {
+            background: radial-gradient(circle at 50% 50%, rgba(106, 26, 123, 0.05) 0%, transparent 70%);
+        }
+
+        body.light-mode .hero-btn,
+        body.light-mode .resume-btn {
+            background-color: #a0c518;
+            color: #333;
+            box-shadow: 0 5px 15px rgba(160, 197, 24, 0.4);
+        }
+        body.light-mode .hero-btn:hover,
+        body.light-mode .resume-btn:hover {
+            background-color: #007bff;
+            color: white;
+            box-shadow: 0 8px 20px rgba(0, 123, 255, 0.6);
+            animation: pulseEffectLight 1.5s infinite;
+        }
+        @keyframes pulseEffectLight {
+            0% { transform: translateY(-3px) scale(1.02); box-shadow: 0 8px 20px rgba(0, 123, 255, 0.6); }
+            50% { transform: translateY(-5px) scale(1.03); box-shadow: 0 10px 25px rgba(0, 123, 255, 0.8); }
+            100% { transform: translateY(-3px) scale(1.02); box-shadow: 0 8px 20px rgba(0, 123, 255, 0.6); }
+        }
+
+        body.light-mode .live-demo-btn {
+            background-color: #6a1a7b;
+            color: white;
+            box-shadow: 0 5px 15px rgba(106, 26, 123, 0.4);
+        }
+        body.light-mode .live-demo-btn:hover {
+            background-color: #4a0f5a;
+            box-shadow: 0 8px 20px rgba(106, 26, 123, 0.6);
+        }
+
+        body.light-mode .image-container {
+             box-shadow: 0 0 20px rgba(160, 197, 24, 0.6);
+             border-color: var(--accent);
+        }
+        body.light-mode .image-container .caption {
+            background: rgba(160, 197, 24, 0.85);
+        }
+
+        body.light-mode .skill-item {
+            background: #a0c518;
+            box-shadow: 0 0 15px #a0c518;
+            color: #333;
+        }
+
+        body.light-mode .skill-item:hover {
+            background-color: #007bff;
+            box-shadow: 0 0 25px #007bff;
+        }
+
+        body.light-mode .project-card {
+            background: var(--glass-bg-light);
+            border: 1px solid var(--glass-border-light);
+            box-shadow: 0 4px 30px var(--card-shadow-light);
+        }
+
+        body.light-mode .project-card:hover {
+            box-shadow: 0 10px 40px rgba(106, 26, 123, 0.2);
+            background: rgba(255, 255, 255, 0.75);
+        }
+        body.light-mode .project-card h3 {
+            color: var(--accent);
+        }
+        body.light-mode .project-card:hover h3 {
+            color: var(--hover-accent);
+        }
+        body.light-mode .project-card .links a {
+            background-color: #a0c518;
+            color: #333;
+        }
+        body.light-mode .project-card .links a:hover {
+            background-color: var(--accent);
+            color: white;
+        }
+        body.light-mode .tech-tag {
+            background-color: rgba(106, 26, 123, 0.2);
+            color: #333;
+            border-color: rgba(106, 26, 123, 0.1);
+        }
+
+        body.light-mode footer {
+            background-color: #a0c518;
+            color: #333;
+        }
+
+        body.light-mode .coding-card {
+            background: var(--glass-bg-light);
+            border: 1px solid var(--glass-border-light);
+            box-shadow: 0 4px 10px var(--card-shadow-light);
+            color: #333;
+        }
+        body.light-mode .coding-card:hover {
+            background: rgba(255, 255, 255, 0.75);
+            box-shadow: 0 10px 40px rgba(160, 197, 24, 0.2);
+        }
+        body.light-mode .coding-card h3 {
+            color: #333;
+        }
+        body.light-mode .coding-card:hover h3 {
+            color: var(--hover-accent);
+        }
+
+        body.light-mode #scrollBar {
+            background: #007bff;
+        }
+        body.light-mode .progress-bar {
+            background: linear-gradient(90deg, #007bff, #6a1a7b);
+        }
+        body.light-mode #scrollToTopBtn {
+            background-color: var(--accent);
+            color: white;
+        }
+        body.light-mode #scrollToTopBtn:hover {
+            background-color: #4a0f5a;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+
+    <div id="particles-js"></div>
+    <div id="scrollBar"></div>
+
+    <nav>
+        <div class="left">Surajit Das</div>
+        <ul>
+            <li><a href="#firstsec">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="toggle-theme" onclick="toggleDarkMode()" aria-label="Toggle Dark Mode">🌓</button>
+    </nav>
+
+    <main>
+        <section id="firstsec" class="firstsec">
+            <div class="leftSection" data-aos="fade-right" data-aos-offset="150" data-aos-duration="1000">
+                <h2 data-aos="fade-right" data-aos-delay="200">Hello, I am Surajit Das</h2>
+                <h2 data-aos="fade-right" data-aos-delay="400"><span id="element" class="purple"></span></h2>
+                <div data-aos="fade-up" data-aos-delay="600">
+                    <button class="hero-btn"
+                        onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Let's
+                        Connect</button>
+                    <a href="https://drive.google.com/drive/folders/1HvZ0A9igW4u8BRnmkshZWh6SnGoB1xMq" download><button
+                            class="resume-btn" title="Download Resume">📄
+                            Resume</button></a>
+                </div>
+            </div>
+            <div class="rightSection" data-aos="zoom-in" data-aos-offset="150" data-aos-duration="1000" data-aos-delay="200">
+                <div class="image-container">
+                    <img src="me.jpeg" alt="Photo of Surajit Das" />
+                    <div class="caption">Surajit Das</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" data-aos="fade-up" data-aos-offset="150" data-aos-duration="800">
+            <h2 data-aos="fade-down">👤 About Me</h2>
+            <p style="text-align:center; max-width:700px; margin:auto;" data-aos="fade-up" data-aos-delay="200">
+                I'm a passionate MERN stack developer and DSA enthusiast with a knack for crafting scalable web
+                applications. I enjoy problem solving, exploring new technologies, and continuously improving my skills
+                to build impactful software.
+            </p>
+        </section>
+
+        <section id="skills" data-aos="fade-up" data-aos-offset="150" data-aos-duration="800">
+            <h2 data-aos="fade-down">🛠️ Skills</h2>
+            <div class="skill-list">
+                <div class="skill-item" data-aos="zoom-in" data-aos-delay="100">Data Structures & Algorithms</div>
+                <div class="skill-item" data-aos="zoom-in" data-aos-delay="200">Competitive Programming</div>
+                <div class="skill-item" data-aos="zoom-in" data-aos-delay="300">JavaScript (ES6+)</div>
+                <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">React.js</div>
+                <div class="skill-item" data-aos="zoom-in" data-aos-delay="500">Node.js & Express</div>
+                <div class="skill-item" data-aos="zoom-in" data-aos-delay="600">MongoDB</div>
+                <div class="skill-item" data-aos="zoom-in" data-aos-delay="700">HTML5 & CSS3</div>
+                <div class="skill-item" data-aos="zoom-in" data-aos-delay="800">Git & GitHub</div>
+                <div class="skill-item" data-aos="zoom-in" data-aos-delay="900">Linux</div>
+                <div class="skill-item" data-aos="zoom-in" data-aos-delay="1000">TypeScript</div>
+                <div class="skill-item" data-aos="zoom-in" data-aos-delay="1100">Redux</div>
+            </div>
+        </section>
+
+        <section id="projects" data-aos="fade-up" data-aos-offset="150" data-aos-duration="800">
+            <h2 data-aos="fade-down">📁 Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
+                    <h3>Multiplayer Terminal Game</h3>
+                    <p>A terminal-based multiplayer game using C++ and SFML, where players destroy boxes of varying
+                        sizes for points.</p>
+                    <div class="project-tech-tags">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">SFML</span>
+                        <span class="tech-tag">Sockets</span>
+                    </div>
+                    <div class="links">
+                        <a href="https://github.com/surajit-is-here/SFML-Multiplayer-BoxGame" target="_blank"
+                            rel="noopener noreferrer">View on GitHub</a>
+                        </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
+                    <h3>Quiz Application</h3>
+                    <p>A simple and interactive quiz application built using Java Swing.</p>
+                    <div class="project-tech-tags">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Swing</span>
+                    </div>
+                    <div class="links">
+                        <a href="https://github.com/surajit-is-here/Quiz_Application" target="_blank"
+                            rel="noopener noreferrer">View on
+                            GitHub</a>
+                        </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">
+                    <h3>Chat Application</h3>
+                    <p>A Real time chat application using Node.js and Socket.IO.</p>
+                    <div class="project-tech-tags">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express.js</span>
+                        <span class="tech-tag">Socket.IO</span>
+                    </div>
+                    <div class="links">
+                        <a href="https://github.com/surajit-is-here/Chat-Application" target="_blank"
+                            rel="noopener noreferrer">View on GitHub</a>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="coding-profiles" style="padding: 2rem; font-family: 'Poppins', sans-serif;"
+            data-aos="fade-up" data-aos-offset="150" data-aos-duration="800">
+            <h2 data-aos="fade-down" style="font-size: 1.8rem; margin-bottom: 1.5rem;">💻 Coding Profiles</h2>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center;">
+                <a href="https://leetcode.com/I_am_Noob_Programmer/" target="_blank" style="text-decoration: none;">
+                    <div class="coding-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
+                        <img src="https://leetcode.com/favicon.ico" alt="LeetCode" class="logo" />
+                        <div>
+                            <h3>LeetCode</h3>
+                            <p>350+ problems solved</p>
+                            <p>Contest Rating: <strong>1577+</strong></p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://codeforces.com/profile/Surajit_Das" target="_blank" style="text-decoration: none;">
+                    <div class="coding-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
+                        <img src="https://sta.codeforces.com/s/96603/images/codeforces-logo-with-telegram.png"
+                            alt="Codeforces" class="logo" />
+                        <div>
+                            <h3>Codeforces</h3>
+                            <p>Rating: <strong>1269</strong> (Pupil)</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://auth.geeksforgeeks.org/user/surajitjack2002/practice" target="_blank"
+                    style="text-decoration: none;">
+                    <div class="coding-card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">
+                        <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png"
+                            alt="GeeksforGeeks" class="logo" />
+                        <div>
+                            <h3>GeeksforGeeks</h3>
+                            <p>DSA Practice</p>
+                            <p>250+ Problems Solved</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" style="text-align:center; margin-bottom:50px;"
+            data-aos="fade-up" data-aos-offset="150" data-aos-duration="800">
+            <h2 data-aos="fade-down">✉️ Contact</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Email: <a href="mailto:surajitjack2002@gmail.com" style="color: var(--accent);">surajitjack2002@gmail.com</a>
+            </p>
+            <p data-aos="fade-up" data-aos-delay="200">LinkedIn: <a href="https://www.linkedin.com/in/surajit-das-20b216240/" target="_blank"
+                    style="color: var(--accent);">Surajit Das</a></p>
+            <p data-aos="fade-up" data-aos-delay="300">GitHub: <a href="https://github.com/surajit-is-here" target="_blank"
+                    style="color: var(--accent);">surajit-is-here</a></p>
+
+            <div class="social-links" data-aos="fade-up" data-aos-delay="400" style="margin-top: 25px; display: flex; justify-content: center; gap: 20px;">
+                <a href="https://github.com/surajit-is-here" class="social-icon" target="_blank" style="color: var(--primary-text); font-size: 2rem; transition: color 0.3s ease, transform 0.3s ease;" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/surajit-das-20b216240/" class="social-icon" target="_blank" style="color: var(--primary-text); font-size: 2rem; transition: color 0.3s ease, transform 0.3s ease;" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:surajitjack2002@gmail.com" class="social-icon" style="color: var(--primary-text); font-size: 2rem; transition: color 0.3s ease, transform 0.3s ease;" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://leetcode.com/I_am_Noob_Programmer/" class="social-icon" target="_blank" style="color: var(--primary-text); font-size: 2rem; transition: color 0.3s ease, transform 0.3s ease;" title="LeetCode">
+                    <i class="fas fa-code"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Surajit Das. All rights reserved.
+    </footer>
+
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 120,
+            delay: 0,
+            duration: 1000,
+            easing: 'ease-out', // Smoother easing
+            once: false,
+            mirror: true,
+            anchorPlacement: 'top-bottom',
+        });
+    </script>
+
+    <script>
+        new Typed("#element", {
+            strings: ["MERN Stack Developer", "Frontend Developer", "DSA Enthusiast", "Competitive Programmer"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 1000,
+            smartBackspace: false,
+            loop: true,
+            showCursor: true,
+            cursorChar: '|'
+        });
+
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#aa6be4" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.5, "random": true },
+                "size": { "value": 3, "random": true },
+                "line_linked": { "enable": true, "distance": 150, "color": "#1d6e6e", "opacity": 0.4, "width": 1 },
+                "move": { "enable": true, "speed": 2, "direction": "none", "random": true, "straight": false, "out_mode": "out" }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": { "enable": true, "mode": "repulse" },
+                    "onclick": { "enable": true, "mode": "push" }
+                }
+            }
+        });
+
+        // Scroll progress indicator
+        window.onscroll = function () {
+            let winScroll = document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("scrollBar").style.width = scrolled + "%";
+
+            // Show/hide scroll to top button
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                document.getElementById("scrollToTopBtn").style.display = "block";
+            } else {
+                document.getElementById("scrollToTopBtn").style.display = "none";
+            }
+        };
+
+        // Scroll to top function - uses scrollIntoView for smooth behavior
+        function topFunction() {
+            document.documentElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+
+        // Dark/light mode toggle
+        function toggleDarkMode() {
+            document.body.classList.toggle("light-mode");
+        }
+    </script>
+</body>
+</html>
